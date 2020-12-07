@@ -1,0 +1,123 @@
+@import 'config';
+
+.kad-header {
+    justify-content: space-between;
+    padding: 40px 7.5%;
+    padding-bottom: 20px;
+}
+
+.kad-nav {
+    width: 66.6%;
+    padding-left: 5%;
+    justify-content: space-between;
+
+    & > ul:last-child > li:first-child {
+        padding-top: 12.25px;
+        
+        & > a {
+            font-weight: 400;
+        }
+    }
+    & > ul > li > button {
+        width: 135px;
+        height: 45px;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 5px;
+        background-color: darken($dark-blue, 5%);
+        box-shadow:inset 0 -8px 6px -6px darken($dark-blue, 40%);
+        transition: .35s ease-in-out;
+
+        &:hover {
+            transform: scale(.975);
+            // background-color: darken($dark-blue, 10%);
+        }
+    }
+
+    & > ul:last-child > li:last-child {
+        padding-right: 0;
+    }
+}
+.kad-mobile-container {
+    width: 33.3%;
+}
+
+.kad-nav-list-item > a {
+    color: #000;
+    text-decoration: none;
+    transition: 1s ease-in-out;
+    font-weight: 700;
+
+    &:hover {
+        color: $orange;
+    }
+}
+
+.kad-menu-bar {
+    background-color: darken($dark-blue, 10%);
+}
+
+@media (max-width: 1370px) {
+    .kad-nav {
+        width: 75%;
+    }
+    .kad-mobile-container {
+        width: 25%
+    }
+}
+
+@media (max-width: 1050px) {
+    .kad-header {
+        padding: 35px 4.5%;
+        padding-bottom: 12.5px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .kad-nav {
+        width: 77.5%;
+    }
+    .kad-mobile-container {
+        width: 22.5%;
+    }
+}
+
+@media (max-width: 974px) {
+    .kad-header {
+        padding-top: 10px;
+    }
+
+    .kad-nav {
+        width: auto;
+
+        & > ul:last-child > li:first-child > a {
+            font-weight: 700;
+        }
+
+        & > ul > li > button {
+            color: #000;
+            font-size: 18px;
+            box-shadow: none;
+            font-family: $general-font;
+            background-color: transparent;
+            transition: 1s ease-in-out;
+            height: auto;
+            width: auto;
+    
+            &:hover {
+                transform: scale(1);
+                color: $orange;
+                // background-color: darken($dark-blue, 10%);
+            }
+        }
+
+            
+        & > ul:last-child > li:last-child {
+            padding-right: 5%;
+        }
+    }
+
+    .kad-mobile-container {
+        width: auto;
+    }
+}
