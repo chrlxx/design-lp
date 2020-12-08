@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +7,7 @@
 
 body {
   color: #000;
-  font-size: 18px;
+  font-size: 16.5px;
   font-family: "Roboto", sans-serif;
   background-color: #fbf7ee;
 }
@@ -19,6 +17,253 @@ button, input {
   border: 1px solid transparent;
 }
 
-li {
+a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  color: gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #083377;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+main {
+  display: grid;
+  margin: 0 7.5%;
+  align-items: center;
+  gap: 10px;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+main div h1 {
+  margin-bottom: 15px;
+}
+
+main div p {
+  font-size: 15px;
+  margin-right: 10%;
+  margin-bottom: 15px;
+}
+
+main div form > input {
+  height: 42.5px;
+  border-radius: 3px;
+}
+
+main div form > input:first-child {
+  width: 50%;
+  padding: 5px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.453);
+}
+
+main div form > input:last-child {
+  width: 23.5%;
+  color: #fff;
+  font-weight: 700;
+  background-color: #0d52bf;
+  box-shadow: inset 0 -8px 6px -6px black;
+  transition: .35s ease-in-out;
+}
+
+main div form > input:last-child:hover {
+  transform: scale(0.975);
+}
+
+main div div {
+  margin-top: 10px;
+}
+
+main div div p {
+  margin: 0;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+main div div p img {
+  height: 12px;
+  width: 12px;
+}
+
+main img {
+  width: 100%;
+}
+
+body > section {
+  display: grid;
+  margin: 50px 7.5%;
+  gap: 4%;
+  grid-gap: 4%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+body > section div {
+  border: 1px solid rgba(128, 128, 128, 0.453);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+body > section div img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+body > section div h4 {
+  color: #000;
+  font-size: 18.5px;
+  margin-bottom: 8.5px;
+}
+
+body > section div p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+body > section div p b {
+  color: #000;
+}
+
+aside {
+  margin: 50px 7.5%;
+  margin-bottom: 30px;
+}
+
+aside h1 {
+  margin-bottom: 10px;
+}
+
+.box {
+  display: grid;
+  margin: 0 7.5%;
+  gap: 4%;
+  grid-gap: 4%;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box div {
+  border: 1px solid rgba(128, 128, 128, 0.453);
+  background-color: #fff3d9;
+  border-radius: 5px;
+  padding: 25px 25px 40px 25px;
+}
+
+.box div button {
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: #093e8f;
+  background-color: transparent;
+  border: 1px solid #093e8f;
+  transition: 1s ease-in-out;
+  width: 100%;
+  font-size: 15px;
+}
+
+.box div button:hover {
+  color: #fff;
+  background-color: #0b4bae;
+  box-shadow: inset 0 -8px 6px -6px black;
+}
+
+.box div button:first-child {
+  width: auto;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: #13366d;
+  box-shadow: 1px 1px 3.5px #13356dc7;
+}
+
+.box div ul, .box div p {
+  line-height: 22.5px;
+  font-size: 16px;
+  color: #000;
+}
+
+.box div ul {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.box div ul li:first-child {
+  margin-right: 10px;
+}
+
+.box div ul li:last-child {
+  padding-top: 3.5px;
+}
+
+.box div h2 {
+  color: #000;
+  display: none;
+}
+
+.box div:nth-child(3) > button {
+  padding: 10px 3.5px;
+}
+
+.box div:nth-child(3) > button:first-child {
+  padding: 10px 20px;
+}
+
+.box div:last-child {
+  height: fit-content;
+  background-color: transparent;
+  border: 1px solid #464545;
+}
+
+.box div:last-child img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.box div:last-child p:first-child {
+  margin-bottom: 17.5px;
+}
+
+.box div:last-child p:last-child {
+  margin-top: 17.5px;
+  color: gray;
+}
+
+.tweaks {
+  display: grid;
+  margin: 0 7.5%;
+  gap: 4%;
+  grid-gap: 4%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tweaks p {
+  top: -30px;
+  padding: 0 25px;
+  position: relative;
+  font-weight: 700;
+  font-size: 18.5px;
+  color: #000;
+}
+
+.tweaks p span {
+  color: gray;
+}
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #000;
 }

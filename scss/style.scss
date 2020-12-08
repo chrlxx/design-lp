@@ -9,15 +9,266 @@
 
 body {
     color: #000;
-    font-size: 18px;
+    font-size: 16.5px;
     font-family: $general-font;
     background-color: $general-color;
 }
+
 button, input {
     outline: 0;
     border: 1px solid transparent;
 }
-li {
+
+a {
     text-decoration: none;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+li {
+    list-style-type: none;
+}
+
+p {
+    color: gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: darken($dark-blue, 10%);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+main {
+    display: grid;
+    margin: 0 7.5%;
+    align-items: center;
+    gap: 10px; grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+
+    div {
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-right: 10%;
+            margin-bottom: 15px;
+        }
+
+        form > input {
+            height: 42.5px;
+            border-radius: 3px;
+        }
+
+        form > input:first-child {
+            width: 50%;
+            padding: 5px 10px;
+            border: 1px solid rgba(128, 128, 128, 0.453);
+        }
+
+        form > input:last-child {
+            width: 23.5%;
+            color: #fff;
+            font-weight: 700;
+            background-color: lighten($dark-blue, 5%);
+            box-shadow:inset 0 -8px 6px -6px darken($dark-blue, 40%);
+            transition: .35s ease-in-out;
+    
+            &:hover {
+                transform: scale(.975);
+            }
+        }
+
+        div {
+            margin-top: 10px;
+            p {
+                margin: 0;
+                font-size: 12px;
+                margin-bottom: 5px;
+
+                img {
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+body > section {
+    display: grid;
+    margin: 50px 7.5%;
+    gap: 4%; grid-gap: 4%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    div {
+        border: 1px solid rgba(128, 128, 128, 0.453);
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 25px;
+
+        img {
+            width: 40px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            color: #000;
+            font-size: 18.5px;
+            margin-bottom: 8.5px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 20px;
+            b {
+                color: #000;
+            }
+        }
+    }
+}
+
+aside {
+    margin: 50px 7.5%;
+    margin-bottom: 30px;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+}
+
+.box {
+    display: grid;
+    margin: 0 7.5%;
+    gap: 4%; grid-gap: 4%;
+    // gap: 2.5%; grid-gap: 2.5%;
+    grid-template-columns: repeat(4, 1fr);
+
+    div {
+        border: 1px solid rgba(128, 128, 128, 0.453);
+        background-color: #fff3d9;
+        border-radius: 5px;
+        padding: 25px 25px 40px 25px;
+
+        button {
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            color: darken($dark-blue, 5%);
+            background-color: transparent;
+            border: 1px solid darken($dark-blue, 5%);
+            transition: 1s ease-in-out;
+            // transform: scale(.85);
+
+            // for second button
+            width: 100%;
+            font-size: 15px;
+            &:hover {
+                color: #fff;
+                background-color: lighten($dark-blue, 1.5%);
+                box-shadow:inset 0 -8px 6px -6px darken($dark-blue, 40%);
+            }
+        }
+        button:first-child {
+            width: auto;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 50px;
+            background-color: #13366d;
+            box-shadow: 1px 1px 3.5px #13356dc7;
+        }
+
+        ul, p {
+            line-height: 22.5px;
+            font-size: 16px;
+            color: #000;
+        }
+
+        ul {
+            display: flex;
+            margin-bottom: 10px;
+
+            li:first-child {
+                margin-right: 10px;
+            }
+            li:last-child {
+                padding-top: 3.5px;
+            }
+        }
+
+        h2 {
+            color: #000;
+            display: none;
+        }
+    }
+
+    // 3rd box, second button
+    div:nth-child(3) > button {
+        padding: 10px 3.5px;
+
+        &:first-child {
+            padding: 10px 20px;
+        }
+    }
+
+    // AD's
+    div:last-child {
+        height: fit-content;
+        background-color: transparent;
+        border: 1px solid rgb(70, 69, 69);
+
+        img {
+            width: 100%;
+            border-radius: 3px;
+        }
+
+        p:first-child {
+            margin-bottom: 17.5px;
+        }
+        p:last-child {
+            margin-top: 17.5px;
+            color: gray;
+        }
+    }
+}
+
+.tweaks {
+    display: grid;
+    margin: 0 7.5%;
+    gap: 4%; grid-gap: 4%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    p {
+        top: -30px;
+        padding: 0 25px;
+        position: relative;
+        font-weight: 700;
+        font-size: 18.5px;
+        color: #000;
+
+        span {
+            color: gray;
+        }
+    }
+}
+
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #000;
+}
+
+
+
+@import 'mobile';
