@@ -2,7 +2,7 @@
 
 .kad-header {
     justify-content: space-between;
-    padding: 40px 7.5%;
+    padding: 40px 5%;
     padding-bottom: 20px;
 }
 
@@ -43,13 +43,13 @@
 }
 
 .kad-nav-list-item > a {
-    color: #000;
+    color: darken($dark-blue, 10%);
     text-decoration: none;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
     font-weight: 700;
 
     &:hover {
-        color: $orange;
+        color: gray;
     }
 }
 
@@ -95,18 +95,18 @@
         }
 
         & > ul > li > button {
-            color: #000;
+            color: darken($dark-blue, 10%);
             font-size: 18px;
             box-shadow: none;
             font-family: $general-font;
             background-color: transparent;
-            transition: 1s ease-in-out;
+            transition: .5s ease-in-out;
             height: auto;
             width: auto;
     
             &:hover {
                 transform: scale(1);
-                color: $orange;
+                color: gray;
                 // background-color: darken($dark-blue, 10%);
             }
         }

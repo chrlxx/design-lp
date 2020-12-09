@@ -1,0 +1,108 @@
+@media (max-width: 1260px){
+    main > div > form > input:first-child {
+        width: 60%;
+    }
+
+    .box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .box > div {
+        padding: 25px;
+        height: fit-content;
+    }
+    .box > div > h2 {
+        color: #000;
+        display: block;
+        font-weight: 700;
+        font-size: 18.5px;
+        padding-top: 15px;
+        font-weight: 400;
+
+        span {
+            font-weight: 700;
+            font-size: 18.5px;
+            color: gray;
+        }
+    }
+
+    .tweaks {
+        display: none;
+    }
+}
+
+@media (max-width: 1030px) and (min-width: 856px){
+    body > section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    body > section > div:last-child {
+        grid-column: 2/3;
+    }
+}
+
+@media (max-width: 855px) {
+    main {
+        grid-template-columns: 1fr;
+
+        & > div {
+            text-align: center;
+
+            p {
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+
+            div {
+                text-align: left;
+            }
+        }
+        & > img {
+            display: none;
+        }
+    }
+    body > section, .box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 550px){
+    body > section, .box {
+        grid-template-columns: 1fr;
+    }
+
+    main > div > form {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        input:first-child, input:last-child {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
+    aside {
+        margin-top: 135px;
+    }
+
+    footer {
+        margin-top: 200px;
+    }
+
+    // targeting each section's margin
+    main, body > section, aside, .box {
+        margin-left: 16.5%;
+        margin-right: 16.5%;
+    }
+}
+
+@media (max-width: 383px) {
+    main, body > section, aside, .box {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    aside > h1 {
+        font-size: 30px;
+    }
+}

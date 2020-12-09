@@ -1,6 +1,6 @@
 .kad-header {
   justify-content: space-between;
-  padding: 40px 7.5%;
+  padding: 40px 5%;
   padding-bottom: 20px;
 }
 
@@ -42,14 +42,14 @@
 }
 
 .kad-nav-list-item > a {
-  color: #000;
+  color: #083377;
   text-decoration: none;
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
   font-weight: 700;
 }
 
 .kad-nav-list-item > a:hover {
-  color: #fd8c43;
+  color: gray;
 }
 
 .kad-menu-bar {
@@ -92,18 +92,18 @@
     font-weight: 700;
   }
   .kad-nav > ul > li > button {
-    color: #000;
+    color: #083377;
     font-size: 18px;
     box-shadow: none;
     font-family: "Roboto", sans-serif;
     background-color: transparent;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
     height: auto;
     width: auto;
   }
   .kad-nav > ul > li > button:hover {
     transform: scale(1);
-    color: #fd8c43;
+    color: gray;
   }
   .kad-nav > ul:last-child > li:last-child {
     padding-right: 5%;
@@ -112,3 +112,4 @@
     width: auto;
   }
 }
+/*# sourceMappingURL=navbar.css.map */

@@ -41,7 +41,7 @@ h1 {
 
 main {
     display: grid;
-    margin: 0 7.5%;
+    margin: 0 5%;
     align-items: center;
     gap: 10px; grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
@@ -103,7 +103,7 @@ main {
 
 body > section {
     display: grid;
-    margin: 50px 7.5%;
+    margin: 50px 5%;
     gap: 4%; grid-gap: 4%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -136,7 +136,7 @@ body > section {
 }
 
 aside {
-    margin: 50px 7.5%;
+    margin: 50px 5%;
     margin-bottom: 30px;
 
     h1 {
@@ -146,7 +146,7 @@ aside {
 
 .box {
     display: grid;
-    margin: 0 7.5%;
+    margin: 0 5%;
     gap: 4%; grid-gap: 4%;
     // gap: 2.5%; grid-gap: 2.5%;
     grid-template-columns: repeat(4, 1fr);
@@ -221,6 +221,7 @@ aside {
 
     // AD's
     div:last-child {
+        text-align: center;
         height: fit-content;
         background-color: transparent;
         border: 1px solid rgb(70, 69, 69);
@@ -240,9 +241,14 @@ aside {
     }
 }
 
+// Ad's
+.box > div:last-child {
+    margin: auto 7.5%;
+}
+
 .tweaks {
     display: grid;
-    margin: 0 7.5%;
+    margin: 0 5%;
     gap: 4%; grid-gap: 4%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -250,11 +256,11 @@ aside {
         top: -30px;
         padding: 0 25px;
         position: relative;
-        font-weight: 700;
-        font-size: 18.5px;
         color: #000;
 
         span {
+        font-weight: 700;
+        font-size: 18.5px;
             color: gray;
         }
     }
@@ -262,7 +268,7 @@ aside {
 
 
 footer {
-    padding: 10px 0;
+    padding: 40px 0;
     text-align: center;
     margin-top: 20px;
     font-size: 15px;

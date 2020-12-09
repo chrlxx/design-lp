@@ -39,7 +39,7 @@ h1 {
 
 main {
   display: grid;
-  margin: 0 7.5%;
+  margin: 0 5%;
   align-items: center;
   gap: 10px;
   grid-gap: 10px;
@@ -101,7 +101,7 @@ main img {
 
 body > section {
   display: grid;
-  margin: 50px 7.5%;
+  margin: 50px 5%;
   gap: 4%;
   grid-gap: 4%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -136,7 +136,7 @@ body > section div p b {
 }
 
 aside {
-  margin: 50px 7.5%;
+  margin: 50px 5%;
   margin-bottom: 30px;
 }
 
@@ -146,7 +146,7 @@ aside h1 {
 
 .box {
   display: grid;
-  margin: 0 7.5%;
+  margin: 0 5%;
   gap: 4%;
   grid-gap: 4%;
   grid-template-columns: repeat(4, 1fr);
@@ -220,6 +220,7 @@ aside h1 {
 }
 
 .box div:last-child {
+  text-align: center;
   height: fit-content;
   background-color: transparent;
   border: 1px solid #464545;
@@ -239,9 +240,13 @@ aside h1 {
   color: gray;
 }
 
+.box > div:last-child {
+  margin: auto 7.5%;
+}
+
 .tweaks {
   display: grid;
-  margin: 0 7.5%;
+  margin: 0 5%;
   gap: 4%;
   grid-gap: 4%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -251,19 +256,115 @@ aside h1 {
   top: -30px;
   padding: 0 25px;
   position: relative;
-  font-weight: 700;
-  font-size: 18.5px;
   color: #000;
 }
 
 .tweaks p span {
+  font-weight: 700;
+  font-size: 18.5px;
   color: gray;
 }
 
 footer {
-  padding: 10px 0;
+  padding: 40px 0;
   text-align: center;
   margin-top: 20px;
   font-size: 15px;
   color: #000;
 }
+
+@media (max-width: 1260px) {
+  main > div > form > input:first-child {
+    width: 60%;
+  }
+  .box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .box > div {
+    padding: 25px;
+    height: fit-content;
+  }
+  .box > div > h2 {
+    color: #000;
+    display: block;
+    font-weight: 700;
+    font-size: 18.5px;
+    padding-top: 15px;
+    font-weight: 400;
+  }
+  .box > div > h2 span {
+    font-weight: 700;
+    font-size: 18.5px;
+    color: gray;
+  }
+  .tweaks {
+    display: none;
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 856px) {
+  body > section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body > section > div:last-child {
+    grid-column: 2/3;
+  }
+}
+
+@media (max-width: 855px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  main > div {
+    text-align: center;
+  }
+  main > div p {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  main > div div {
+    text-align: left;
+  }
+  main > img {
+    display: none;
+  }
+  body > section, .box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  body > section, .box {
+    grid-template-columns: 1fr;
+  }
+  main > div > form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main > div > form input:first-child, main > div > form input:last-child {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  aside {
+    margin-top: 135px;
+  }
+  footer {
+    margin-top: 200px;
+  }
+  main, body > section, aside, .box {
+    margin-left: 16.5%;
+    margin-right: 16.5%;
+  }
+}
+
+@media (max-width: 383px) {
+  main, body > section, aside, .box {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  aside > h1 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
