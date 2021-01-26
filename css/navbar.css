@@ -9,15 +9,12 @@
   padding-left: 5%;
   justify-content: space-between;
 }
-
 .kad-nav > ul:last-child > li:first-child {
   padding-top: 12.25px;
 }
-
 .kad-nav > ul:last-child > li:first-child > a {
   font-weight: 400;
 }
-
 .kad-nav > ul > li > button {
   width: 135px;
   height: 45px;
@@ -26,13 +23,11 @@
   border-radius: 5px;
   background-color: #093e8f;
   box-shadow: inset 0 -8px 6px -6px black;
-  transition: .35s ease-in-out;
+  transition: 0.35s ease-in-out;
 }
-
 .kad-nav > ul > li > button:hover {
   transform: scale(0.975);
 }
-
 .kad-nav > ul:last-child > li:last-child {
   padding-right: 0;
 }
@@ -44,10 +39,9 @@
 .kad-nav-list-item > a {
   color: #083377;
   text-decoration: none;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   font-weight: 700;
 }
-
 .kad-nav-list-item > a:hover {
   color: gray;
 }
@@ -60,31 +54,31 @@
   .kad-nav {
     width: 75%;
   }
+
   .kad-mobile-container {
     width: 25%;
   }
 }
-
 @media (max-width: 1050px) {
   .kad-header {
     padding: 35px 4.5%;
     padding-bottom: 12.5px;
   }
 }
-
 @media (max-width: 1010px) {
   .kad-nav {
     width: 77.5%;
   }
+
   .kad-mobile-container {
     width: 22.5%;
   }
 }
-
 @media (max-width: 974px) {
   .kad-header {
     padding-top: 10px;
   }
+
   .kad-nav {
     width: auto;
   }
@@ -97,7 +91,7 @@
     box-shadow: none;
     font-family: "Roboto", sans-serif;
     background-color: transparent;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
     height: auto;
     width: auto;
   }
@@ -108,8 +102,46 @@
   .kad-nav > ul:last-child > li:last-child {
     padding-right: 5%;
   }
+
   .kad-mobile-container {
     width: auto;
   }
 }
+@media (max-width: 974px) {
+  #contain {
+    background-color: #e9ddc2;
+    border-radius: 5px;
+    position: absolute;
+    width: 98%;
+    left: 10px;
+    padding: 20px 0;
+    animation: bounce linear 3s;
+  }
+}
+@media (max-width: 855px) {
+  #contain {
+    background-color: #e9ddc2;
+    border-radius: 5px;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    padding: 20px 0;
+    animation: bounce linear 3s;
+  }
+}
+@keyframes bounce {
+  0% {
+    transition: 5s ease-in-out;
+    transform: translateY(10px);
+  }
+  50% {
+    transition: 5s ease-in-out;
+    transform: translateY(20px);
+  }
+  100% {
+    transition: 5s ease-in-out;
+    transform: translateY(0px);
+  }
+}
+
 /*# sourceMappingURL=navbar.css.map */

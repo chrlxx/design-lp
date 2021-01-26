@@ -121,3 +121,46 @@
         width: auto;
     }
 }
+
+@media (max-width: 974px) {
+    #contain {
+        background-color: #e9ddc2;
+        border-radius: 5px;
+        position: absolute;
+        width: 98%;
+        left: 10px;
+        padding:20px 0;
+
+        animation: bounce linear 3s;
+    }
+}
+
+@media (max-width: 855px) {
+    #contain {
+        background-color: #e9ddc2;
+        border-radius: 5px;
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        padding:20px 0;
+
+        animation: bounce linear 3s;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transition: 5s ease-in-out;
+        transform: translateY(10px);
+    }
+
+    50% {
+        transition: 5s ease-in-out;
+        transform: translateY(20px);
+    }
+
+    100% {
+        transition: 5s ease-in-out;
+        transform: translateY(0px);
+    }
+}
