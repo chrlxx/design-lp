@@ -278,3 +278,11 @@ footer {
 
 
 @import 'mobile';
+
+// wayyyy larger screens...
+@media (min-width: 1650px) {
+    body {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}
